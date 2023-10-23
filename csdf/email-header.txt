@@ -1,4 +1,4 @@
-Delivered-To: sbhardwaj14082002+lla@gmail.com
+Delivered-To: shubham@google.com
 Received: by 2002:a0c:e24a:0:b0:66d:236d:89ae with SMTP id x10csp1101431qvl;
         Sun, 22 Oct 2023 19:38:24 -0700 (PDT)
 X-Google-Smtp-Source: AGHT+IGNj5sZ0k66hr4oeZfV0XzLyCdefXrSeoX3t+2oRHeBvaaIz8upp5bbkY5mEcCrExPMHqlh
@@ -30,7 +30,7 @@ ARC-Authentication-Results: i=1; mx.google.com;
 Return-Path: <0101018b5a65cf39-fe1b9cc3-bd3e-4d63-8a79-8ee71324d1e9-000000@newsletter.lla.in>
 Received: from a27-59.smtp-out.us-west-2.amazonses.com (a27-59.smtp-out.us-west-2.amazonses.com. [54.240.27.59])
         by mx.google.com with ESMTPS id k11-20020aa7972b000000b0068ff741579fsi5472978pfg.318.2023.10.22.19.38.23
-        for <sbhardwaj14082002+lla@gmail.com>
+        for <shubham@google.com>
         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
         Sun, 22 Oct 2023 19:38:24 -0700 (PDT)
 Received-SPF: pass (google.com: domain of 0101018b5a65cf39-fe1b9cc3-bd3e-4d63-8a79-8ee71324d1e9-000000@newsletter.lla.in designates 54.240.27.59 as permitted sender) client-ip=54.240.27.59;
@@ -40,7 +40,7 @@ Authentication-Results: mx.google.com;
        dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=lla.in
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1698028703; h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID; bh=JoRJAB32UQIR/14A3tf3qeKgp8KsTwqKFUlyvP/60bc=; b=c2J08fblmAkY3YCE057qQYLnf0O3Nhelc5D0bqQOaj9elfdj5x+qoGgEFx+R4djK tdoyPKhlP30axnN9gxEJ89mx0nOv3jIWb1VR/Ju/hbXq1iRdI1PDIQv9NNo/cm4foVW LF/b+g0S4GLINwOweUD7+E/LAGoMM7jGkC6KurJA=
 Date: Mon, 23 Oct 2023 02:38:23 +0000
-To: Shubham Bhardwaj <sbhardwaj14082002+lla@gmail.com>
+To: Shubham Bhardwaj <shubham@google.com>
 From: LLA <newsletter@lla.in>
 Reply-To: LLA <newsletter@lla.in>
 Subject: 🪔Jitna zyada Diwali Bonus, utna zyada tax!
@@ -271,7 +271,7 @@ Stay savvy and informed!</p>
 
 <p><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/1OtkBpihIu9LV6oSvqSJiw/s36Y2sPpys5G45vIbiZYQw" target="_blank">Sign up</a> | <a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/DQISDy7lYomQ7JzS7892KWlg/s36Y2sPpys5G45vIbiZYQw" target="_blank">Advertise</a><br />
 <span style="font-size:12px;"><span style="color:#000000;"><strong>Don&#39;t want to receive these e-mails?&nbsp;</strong></span><strong><a href="https://emails.lla.in/unsubscribe/d892C5C7892gTsl7ZTeyiwoqo1dRb5r8FJbw4XmOpCNHfks/892EY3NiiEyvVYbjX3UHK7dw/s36Y2sPpys5G45vIbiZYQw" ><a href="https://emails.lla.in/unsubscribe/d892C5C7892gTsl7ZTeyiwoqo1dRb5r8FJbw4XmOpCNHfks/892EY3NiiEyvVYbjX3UHK7dw/s36Y2sPpys5G45vIbiZYQw" target="_blank"><span style="color:#000000;">Unsubscribe here</span></a></a></strong><br />
-<span style="color:#000000;"><strong>This email was sent to:&nbsp;sbhardwaj14082002+lla@gmail.com</strong></span></span></p>
+<span style="color:#000000;"><strong>This email was sent to:&nbsp;shubham@google.com</strong></span></span></p>
 </div>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
 </html>

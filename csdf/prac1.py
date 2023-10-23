@@ -10,7 +10,7 @@ def match_re(data, *args):
             print("No", regstr, "found")
 
 
-filename = input("Enter the path for email header file:")
+filename = input("Enter the path for email header file: ")
 fo = open(filename, "r")
 data = fo.read()
 match_re(data, "MIME-version", "Date:", "Subject:", "Delivered-to:", "From:", "^to:")

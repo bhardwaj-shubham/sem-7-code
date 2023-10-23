@@ -1,0 +1,4 @@
+INFO:root:Event 1: Something happened.
+INFO:root:Event 2: Another event occurred.
+INFO:root:Event 3: A third event took place.
+INFO:root:Event 4: Yet another event.
