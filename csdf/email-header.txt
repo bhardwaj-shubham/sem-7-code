@@ -1,0 +1,278 @@
+Delivered-To: sbhardwaj14082002+lla@gmail.com
+Received: by 2002:a0c:e24a:0:b0:66d:236d:89ae with SMTP id x10csp1101431qvl;
+        Sun, 22 Oct 2023 19:38:24 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGNj5sZ0k66hr4oeZfV0XzLyCdefXrSeoX3t+2oRHeBvaaIz8upp5bbkY5mEcCrExPMHqlh
+X-Received: by 2002:aca:240a:0:b0:3ad:9c16:aa94 with SMTP id n10-20020aca240a000000b003ad9c16aa94mr9027150oic.33.1698028704548;
+        Sun, 22 Oct 2023 19:38:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1698028704; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CmiDhxB3NlheRIZvQeRYZe6zeLHbcYqUCjTtFNxcNS2BER0zwDZPq4OWUHnunsl15R
+         UqGAsD5tJdir1tNPhzWQQyerG59c+VFXJzf7nDoaSvH7T4fscjV4f/Gyln0xbh6xTMmg
+         1LGsWwQWJYhwVuQ8WHlwRfX7Bm6pmR0au0FwDUMsBHVsZjyHfZvcF61Knwpa1XaNZ+oH
+         63iVCj0RI0ch6s6o6Ccek/WD1HqFuN6c/ChLS/JV4q/nORw6g64IuZfbET6RFSfC+hvf
+         807L+DtlTY/KLfiuLzS+cAiHsvTxcNEfqjAc4ta1ZKbm36TMEdMf3GUCwYtOarbzG0rf
+         ucNg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:content-transfer-encoding:mime-version:list-unsubscribe
+         :message-id:subject:reply-to:from:to:date:dkim-signature;
+        bh=gGVYcSVkDmRu4++RJ9m2J9D5Iol/PAmcOJjR4/etIhs=;
+        fh=26GAHwOmH7HCpcdAqFMZ7KajNSo49HTgNbzzyqZbLqQ=;
+        b=lHtw2Pdm4QWRbVasaK/jcXT5JuMrPSmzgQxFaOZ3YuO1A29rkwUbq4a509MSudCl5p
+         Y9ALiyVcNU7firW6Znep3ichbVZRcvjI/M70tJA3OO7aoJCl8JFAo/tTEjJJTjHvBZ+g
+         Kd6vw1TWpkvBTbibPDqPfZRxquzHSRRjynN1qnCQS86vR+sbW8LfvZGC5+LCnFgxfPNs
+         0VdeNyy33M5dGrXMIjOvQxXd9Q2so3yJyhGv91KiEKKAd6HZS30pDR1Ng46aSLtQAPla
+         dMzWBxIcCf401Mh+PauRInYIsJqAHNoSSHGHZyoKEE3u/s9VWa3Ff5XQFmxvZIC2eBIc
+         jLTA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=c2J08fbl;
+       spf=pass (google.com: domain of 0101018b5a65cf39-fe1b9cc3-bd3e-4d63-8a79-8ee71324d1e9-000000@newsletter.lla.in designates 54.240.27.59 as permitted sender) smtp.mailfrom=0101018b5a65cf39-fe1b9cc3-bd3e-4d63-8a79-8ee71324d1e9-000000@newsletter.lla.in;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=lla.in
+Return-Path: <0101018b5a65cf39-fe1b9cc3-bd3e-4d63-8a79-8ee71324d1e9-000000@newsletter.lla.in>
+Received: from a27-59.smtp-out.us-west-2.amazonses.com (a27-59.smtp-out.us-west-2.amazonses.com. [54.240.27.59])
+        by mx.google.com with ESMTPS id k11-20020aa7972b000000b0068ff741579fsi5472978pfg.318.2023.10.22.19.38.23
+        for <sbhardwaj14082002+lla@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 22 Oct 2023 19:38:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0101018b5a65cf39-fe1b9cc3-bd3e-4d63-8a79-8ee71324d1e9-000000@newsletter.lla.in designates 54.240.27.59 as permitted sender) client-ip=54.240.27.59;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=c2J08fbl;
+       spf=pass (google.com: domain of 0101018b5a65cf39-fe1b9cc3-bd3e-4d63-8a79-8ee71324d1e9-000000@newsletter.lla.in designates 54.240.27.59 as permitted sender) smtp.mailfrom=0101018b5a65cf39-fe1b9cc3-bd3e-4d63-8a79-8ee71324d1e9-000000@newsletter.lla.in;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=lla.in
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1698028703; h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID; bh=JoRJAB32UQIR/14A3tf3qeKgp8KsTwqKFUlyvP/60bc=; b=c2J08fblmAkY3YCE057qQYLnf0O3Nhelc5D0bqQOaj9elfdj5x+qoGgEFx+R4djK tdoyPKhlP30axnN9gxEJ89mx0nOv3jIWb1VR/Ju/hbXq1iRdI1PDIQv9NNo/cm4foVW LF/b+g0S4GLINwOweUD7+E/LAGoMM7jGkC6KurJA=
+Date: Mon, 23 Oct 2023 02:38:23 +0000
+To: Shubham Bhardwaj <sbhardwaj14082002+lla@gmail.com>
+From: LLA <newsletter@lla.in>
+Reply-To: LLA <newsletter@lla.in>
+Subject: 🪔Jitna zyada Diwali Bonus, utna zyada tax!
+Message-ID: <0101018b5a65cf39-fe1b9cc3-bd3e-4d63-8a79-8ee71324d1e9-000000@us-west-2.amazonses.com>
+X-Mailer: Sendy (https://sendy.co)
+List-Unsubscribe: <https://emails.lla.in/unsubscribe/d892C5C7892gTsl7ZTeyiwoqo1dRb5r8FJbw4XmOpCNHfks/892EY3NiiEyvVYbjX3UHK7dw/s36Y2sPpys5G45vIbiZYQw>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Feedback-ID: 1.us-west-2.LCXLvgQYgikDfqOkJFvcBDbjmveXCZ2ORi3oiCKCEjI=:AmazonSES
+X-SES-Outgoing: 2023.10.23-54.240.27.59
+
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<base target="_blank" />
+	<style type="text/css">body {
+                background-color:  #F0F1F3;
+                font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;
+                font-size: 15px;
+                line-height: 26px;
+                margin: 0;
+                color: #444;
+            }
+
+            pre {
+                background: #f4f4f4f4;
+                padding: 2px;
+            }
+
+            table {
+                width: 100%;
+                border: 1px solid #ddd;
+            }
+            table td {
+                border-color: #ddd;
+                padding: 5px;
+            }
+
+            .wrap {
+                background-color: #fff;
+                padding: 30px;
+                max-width: 525px;
+                margin: 0 auto;
+                border-radius: 5px;
+            }
+
+            .button {
+                background: #0055d4;
+                border-radius: 3px;
+                text-decoration: none !important;
+                color: #fff !important;
+                font-weight: bold;
+                padding: 10px 30px;
+                display: inline-block;
+            }
+            .button:hover {
+                background: #111;
+            }
+
+            .footer {
+                text-align: center;
+                font-size: 12px;
+                color: #888;
+            }
+                .footer a {
+                    color: #888;
+                    margin-right: 5px;
+                }
+
+            .gutter {
+                padding: 20px;
+               
+                padding-top:20px;
+               padding-bottom:20px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            a {
+                color: #0055d4;
+            }
+                a:hover {
+                    color: #111;
+                }
+                
+                
+            @media screen and (max-width: 600px) {
+                .wrap {
+                    max-width: auto;
+                }
+                .gutter {
+                    padding: 20px;
+                }
+            }
+	</style>
+</head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1131.0" style="background-color:  #F0F1F3;font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;font-size: 15px;line-height: 26px;margin: 0;color: #444;">
+<div class="center" style="text-align:center;">
+<div class="gutter logo-lla" style="padding: 0px;"><span style="font-size:12px;"><img alt="" src="https://imgur.com/Dj1J1xn" />Edition #24</span></div>
+
+<div class="wrap" style="background-color: rgb(255, 255, 255); padding: 30px; max-width: 525px; margin: 0px auto; border-radius: 5px; text-align: left;"><img alt="" src="https://i.imgur.com/OhViHwM.png" srcset="" style="width:580px;" />Hello Janta,👋</div>
+
+<div class="wrap" style="background-color: rgb(255, 255, 255); padding: 30px; max-width: 525px; margin: 0px auto; border-radius: 5px; text-align: left;">
+<p>How are you all?</p>
+
+<p><img alt="" src="https://media.giphy.com/media/101DNxoBTatF16/giphy.gif" style="width: auto; height: auto;" /></p>
+
+<p>Welcome back to another edition of <em><strong>&#39;The Success Circle - Empowering Your Growth&#39;🚀</strong></em></p>
+
+<p>As the festive season approaches, there&#39;s one word that buzzes around offices across India - <strong>&quot;Bonus&quot;</strong>!✨ But what exactly is a bonus, and what are the laws governing it?</p>
+
+<p>Let&#39;s dive in and understand this exciting aspect of our professional lives, shall we?<br />
+&nbsp;</p>
+
+<h3>Bonus Ki Baat: <a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/KAYj8tsdYLOacCd7D7Lo1w/s36Y2sPpys5G45vIbiZYQw">What Exactly Is a Bonus?</a> 💼</h3>
+
+<p>A bonus is a financial reward beyond your regular salary, often given by employers to appreciate and acknowledge an employee&#39;s performance and contribution to the company&#39;s success.</p>
+
+<p>For example, imagine you&#39;ve worked extra hard on a project, and it&#39;s a big success. To say &quot;Shabaash!&quot; (well done), your company might give you a little something extra in your paycheck. That&#39;s your bonus!<br />
+&nbsp;</p>
+
+<h3>Kanoon Ki Nazar Mein: The Legal Angle of Bonus ⚖️</h3>
+
+<p>Is it mandatory for employers to give a bonus?</p>
+
+<p>Well, according to the Payment of Bonus Act, 1965, it&#39;s a legal obligation for Indian companies employing more than 20 people to provide a bonus to their employees 🏢</p>
+
+<p>This statutory bonus ranges from 8.33% to 20% of an employee&#39;s salary. So, legally, bhaiyo/beheno (brother/sister), if your company falls under this criterion, aapko bonus toh banta hai (you are entitled to a bonus)!</p>
+
+<h3><br />
+Incentive Ya Bonus: What&#39;s the Difference? 🤷</h3>
+
+<p>While bonuses are usually provided after a financial year or during festivals, incentives are performance-based financial rewards given any time of the year.</p>
+
+<p>Think of it this way: if you exceed your sales target, you might receive an incentive right away, rather than waiting for Diwali!</p>
+
+<h3><br />
+🪔Diwali Dhamaka: The Tradition of Diwali Bonus</h3>
+
+<p>The concept of a <strong>Diwali bonus</strong> is deeply rooted in Indian culture, where employers present bonuses as an expression of gratitude during this festival of lights. It&#39;s like your employer saying, &quot;Happy Diwali, yeh lo, kuch meetha ho jaye.&quot;</p>
+
+<p>Only, in this case, the sweetness comes <strong>in the form of money!</strong></p>
+
+<h3><br />
+Jitna zyada bonus, utna zyada tax!: Tax Implications 🧾</h3>
+
+<p>While the joy of receiving a bonus is immense, it&#39;s important to understand that your bonus is not immune to taxes &mdash; it&#39;s subject to income tax under the Income Tax Act, 1961. The bonus amount is considered as part of your income and is taxed according to your applicable income tax slab.</p>
+
+<p>Now, here&#39;s where it gets a bit technical.</p>
+
+<p>🔍It&#39;s also <strong>ESSENTIAL</strong> to remember that if your PAN is not submitted to your employer, the TDS could be deducted at the maximum marginal rate.</p>
+
+<h3><br />
+Bonus vs Incentive: The Final Showdown</h3>
+
+<p>While both bonuses and incentives are forms of financial appreciation, they differ in their core purpose and payout times.⏳</p>
+
+<p>Bonuses are more of a tradition and are not always linked to performance, whereas incentives are direct results of one&#39;s performance.</p>
+
+<p>Isey aise samjho: Bonus Diwali pe milta hai, par incentive tabhi jab aapne kuch zabardast kaam kiya ho! (Understand it like this: You get bonuses at Diwali, but incentives when you&#39;ve done some fantastic work!)💪</p>
+
+<p>We hope this enhances your understanding and helps you know your rights better. Always remember, being aware is being prepared. So, the next time someone talks about bonuses or incentives, you know exactly what it&#39;s all about!</p>
+
+<h2><br />
+<strong><u>Pulse Check!</u> 🤓</strong></h2>
+
+<p>Which platform do you use more?📱</p>
+
+<ol>
+	<li><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/067VVGGa27N1YBNBr9VjyA/s36Y2sPpys5G45vIbiZYQw">Youtube</a></li>
+	<li><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/EhgsYDFxUDl8oL7wvxf6Gw/s36Y2sPpys5G45vIbiZYQw">Instagram</a></li>
+	<li><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/vOQk3TfVgnVOFhVuUAtJ6g/s36Y2sPpys5G45vIbiZYQw">Facebook</a></li>
+</ol>
+
+<p>Where do you consume our content the most?📺</p>
+
+<ol>
+	<li><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/067VVGGa27N1YBNBr9VjyA/s36Y2sPpys5G45vIbiZYQw">Youtube</a></li>
+	<li><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/EhgsYDFxUDl8oL7wvxf6Gw/s36Y2sPpys5G45vIbiZYQw">Instagram</a></li>
+	<li><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/vOQk3TfVgnVOFhVuUAtJ6g/s36Y2sPpys5G45vIbiZYQw">Facebook</a></li>
+	<li><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/cHPO3SGEXINBwDhKeQ7r9w/s36Y2sPpys5G45vIbiZYQw">Newsletter</a></li>
+	<li><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/RXL3V7638sQmx2W18BitF763sQ/s36Y2sPpys5G45vIbiZYQw">Blogs</a></li>
+</ol>
+
+<h2><br />
+<strong><u>Weekly recap!</u>&nbsp;</strong>🔄</h2>
+
+<p><strong>CHECK OUT what we published last week!</strong></p>
+
+<p>1. <a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/IuisfsBvkIaIKY6xQDMU3Q/s36Y2sPpys5G45vIbiZYQw">Unlocking Secrets of EPF in Just 60 Seconds!</a> 🔥<br />
+<br />
+2. <a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/7BWN3Ws4pPgFCkkGXX3tbw/s36Y2sPpys5G45vIbiZYQw">ESI Made Simple: Essential Insights in Only 1 Minute!</a><br />
+<br />
+3. <a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/x2Ppis766US4892wLlpbX5Ow/s36Y2sPpys5G45vIbiZYQw">The Debt Trap: How It Sneaks Up on You!</a> 😱<br />
+<br />
+4. <a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/IoGARphiJv2jrtwT1fFjHA/s36Y2sPpys5G45vIbiZYQw">Dream Property on Your Mind? Make It Yours TODAY!</a><br />
+<br />
+5. <a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/b5sybn6147T1a1V763Gbu8tg/s36Y2sPpys5G45vIbiZYQw">Virat Kohli &amp; BCCI Showdown: What&#39;s the Real Story?</a> 🏏<br />
+<br />
+6. <a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/olug763hzUwImXmDZ0W8DXWg/s36Y2sPpys5G45vIbiZYQw">Decoded : The Minimum Wages Act of 1948 &amp; Why It Matters</a><br />
+<br />
+7.&nbsp;<a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/5BJtsLawgDM892PBcfr2wqqg/s36Y2sPpys5G45vIbiZYQw">How govt spends BORROWED money?</a></p>
+
+<p><br />
+<em>Stay tuned and hit subscribe </em><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/NcknJVVBMfDjo763jM6CkBIQ/s36Y2sPpys5G45vIbiZYQw"><u><strong>@Labour Law Advisor</strong></u></a><em> to consume more such content&hellip;</em></p>
+
+<p><img alt="" src="https://i.imgur.com/YTpGPIm.png" style="width: auto; height: auto;" /></p>
+
+<p>Reply to this email sharing your valuable feedback, and get a chance to be featured!🧭 We hope this edition gave you some insights and maybe even cleared up a few doubts.</p>
+
+<p>Thank you for reading, Janta!🙌<br />
+<br />
+Signing Off 🥂 Until next time,<br />
+<br />
+Stay savvy and informed!</p>
+
+<p>With ❤️<br />
+<strong>Rishabh and Mandeep</strong></p>
+</div>
+
+<p><span style="font-size:12px;"><a href="https://emails.lla.in/w/mbxKoAIojlw7631Blib0Tu9g/892EY3NiiEyvVYbjX3UHK7dw/s36Y2sPpys5G45vIbiZYQw" target="_blank">View this email in browser</a></span></p>
+
+<p><a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/1OtkBpihIu9LV6oSvqSJiw/s36Y2sPpys5G45vIbiZYQw" target="_blank">Sign up</a> | <a href="https://emails.lla.in/l/mbxKoAIojlw7631Blib0Tu9g/DQISDy7lYomQ7JzS7892KWlg/s36Y2sPpys5G45vIbiZYQw" target="_blank">Advertise</a><br />
+<span style="font-size:12px;"><span style="color:#000000;"><strong>Don&#39;t want to receive these e-mails?&nbsp;</strong></span><strong><a href="https://emails.lla.in/unsubscribe/d892C5C7892gTsl7ZTeyiwoqo1dRb5r8FJbw4XmOpCNHfks/892EY3NiiEyvVYbjX3UHK7dw/s36Y2sPpys5G45vIbiZYQw" ><a href="https://emails.lla.in/unsubscribe/d892C5C7892gTsl7ZTeyiwoqo1dRb5r8FJbw4XmOpCNHfks/892EY3NiiEyvVYbjX3UHK7dw/s36Y2sPpys5G45vIbiZYQw" target="_blank"><span style="color:#000000;">Unsubscribe here</span></a></a></strong><br />
+<span style="color:#000000;"><strong>This email was sent to:&nbsp;sbhardwaj14082002+lla@gmail.com</strong></span></span></p>
+</div>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
+</html>
+<img src="https://emails.lla.in/t/s36Y2sPpys5G45vIbiZYQw/mbxKoAIojlw7631Blib0Tu9g" alt="" style="width:1px;height:1px;"/>
