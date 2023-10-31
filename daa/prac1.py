@@ -1,3 +1,4 @@
+# Recursive Fibonacci
 def recursive_fibonacci(n):
     if n <= 1:
         return n
@@ -5,6 +6,7 @@ def recursive_fibonacci(n):
         return recursive_fibonacci(n - 1) + recursive_fibonacci(n - 2)
 
 
+# Non-Recursive Fibonacci
 def non_recursive_fibonacci(n):
     first = 0
     second = 1
@@ -17,6 +19,7 @@ def non_recursive_fibonacci(n):
         print(third)
 
 
+# Main
 if __name__ == "__main__":
     n = int(input("Enter the number: "))
 
